@@ -126,6 +126,8 @@ This is a backend system built using **Node.js**, **Express.js**, and **MongoDB*
 
 
 ## **Bonus**
+
+1. Data Model diagram
 ![image](https://github.com/user-attachments/assets/ca1a0cdc-6ca9-4ed8-9e9f-9dbecc2d9611)
 
 
