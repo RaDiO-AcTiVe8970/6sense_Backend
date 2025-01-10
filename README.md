@@ -119,11 +119,19 @@ This is a backend system built using **Node.js**, **Express.js**, and **MongoDB*
    PORT=3000
    MONGO_URI= database connectionstring
 
+3. (Optional for dev mode) Install nodemon:
+   ```bash
+   npm install -g nodemon
+
 ### **Run the Server**
 1. Start the MongoDB server locally or use a cloud MongoDB instance.
 2. Start the application:
    ```bash
     npm start
+
+3. (Optional) Start the application in dev mode:
+   ```bash
+    npm run dev
 
 ---
 
