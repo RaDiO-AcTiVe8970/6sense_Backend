@@ -69,11 +69,12 @@ This is a backend system built using **Node.js**, **Express.js**, and **MongoDB*
 ## **API Endpoints**
 
 ### **Product Routes**
-| Method | Endpoint                  | Description                              |
-|--------|---------------------------|------------------------------------------|
-| POST   | `/products/addProducts`              | Create a new product          |
-| PUT    | `/products/updateProduct/:id`        | Update product information    |
-| GET    | `/products/getAllProducts`           | Get products with filters     |
+| Method | Endpoint                                 | Description                                              |
+|--------|------------------------------------------|----------------------------------------------------------|
+| POST   | `/products/addProducts`                                  | Create a new product                     |
+| PUT    | `/products/updateProduct/:id`                            | Update product information               |
+| GET    | `/products/getAllProducts`                               | Get all products                         |
+| GET    | `/products/getProductByCategory/:categoryName`           | Get all products associated by category  |
 
 ### **Category Routes**
 | Method | Endpoint                  | Description                             |
