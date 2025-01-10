@@ -8,12 +8,13 @@ const router = express.Router();
 // Create a Product
 router.post('/products/addProducts', async (req: Request, res: Response) => {
     try {
-        const { name, description, price, discount, image, status, categoryId } = req.body;
+        const { name, description, price, discount, image, status, categoryName } = req.body;
 
         // Check if category exists
-        const category = await Category.findById(categoryId);
+        const category = await Category.findOne({ name: categoryName }); 
+        const categoryId = category?._id;
         if (!category) {
-            res.status(400).json({ error: 'Invalid category ID' });
+            res.status(400).json({ error: 'Invalid category name' });
             return;
         }
         
@@ -40,11 +41,11 @@ router.post('/products/addProducts', async (req: Request, res: Response) => {
 });
 
 // Update a Product
-router.put('/products/updateProduct/:id', async (req : Request, res : Response) => {
+router.put('/products/updateProduct/:name', async (req : Request, res : Response) => {
     try {
         const { status, description, discount } = req.body;
 
-        const product = await Product.findById(req.params.id);
+        const product= await Product.findOne({ name: req.params.name });
         if (!product) {
             res.status(404).json({ error: 'Product not found' });
             return;
