@@ -109,8 +109,7 @@ This is a backend system built using **Node.js**, **Express.js**, and **MongoDB*
 1. Install [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/try/download/community).
 2. Clone the repository:
    ```bash
-   git clone <[repository-url](https://github.com/RaDiO-AcTiVe8970/6sense_Backend.git)>
-   cd <repository-folder>
+   git clone https://github.com/RaDiO-AcTiVe8970/6sense_Backend.git
 
 ### **Installation**
 1. Install Dependencies:
