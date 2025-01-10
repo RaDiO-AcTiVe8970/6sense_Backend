@@ -6,7 +6,7 @@ import { generateProductCode } from '../utils/productCode.util';
 const router = express.Router();
 
 // Create a Product
-router.post('/products', async (req: Request, res: Response) => {
+router.post('/products/addProducts', async (req: Request, res: Response) => {
     try {
         const { name, description, price, discount, image, status, categoryId } = req.body;
 
@@ -40,7 +40,7 @@ router.post('/products', async (req: Request, res: Response) => {
 });
 
 // Update a Product
-router.put('/products/:id', async (req : Request, res : Response) => {
+router.put('/products/updateProduct/:id', async (req : Request, res : Response) => {
     try {
         const { status, description, discount } = req.body;
 
@@ -62,7 +62,7 @@ router.put('/products/:id', async (req : Request, res : Response) => {
 });
 
 // Get Products with Filters
-router.get('/products', async (req: Request, res: Response) => {
+router.get('/products/getAllProducts', async (req: Request, res: Response) => {
     try {
         const { category, search } = req.query as { category?: string; search?: string };
         const filter: Record<string, any> = {};
