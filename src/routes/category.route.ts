@@ -4,7 +4,7 @@ import { Category } from '../models/category.model';
 const router = express.Router();
 
 // Create a Category
-router.post('/categories', async (req, res) => {
+router.post('/categories/addCategory', async (req, res) => {
     try {
         const { name } = req.body;
         const category = new Category({ name });
