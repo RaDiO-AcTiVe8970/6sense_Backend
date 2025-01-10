@@ -1,8 +1,5 @@
 # 6Sense-Task
 
-# Data Model diagram 
-![image](https://github.com/user-attachments/assets/ca1a0cdc-6ca9-4ed8-9e9f-9dbecc2d9611)
-
 # **Backend Development Challenge**
 
 ## **Table of Contents**
@@ -126,5 +123,9 @@ This is a backend system built using **Node.js**, **Express.js**, and **MongoDB*
 2. Start the application:
    ```bash
     npm start
+
+
+## **Bonus**
+![image](https://github.com/user-attachments/assets/ca1a0cdc-6ca9-4ed8-9e9f-9dbecc2d9611)
 
 
